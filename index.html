@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richi E Rich | Luxury Dining & Banquet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Richi E Rich</a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Book Table</a></li>
+                    <li><a href="#banquet">Banquet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+   <section id="home" class="hero">
+    <div class="hero-content">
+        <p class="subtitle" style="color:#d4af37;">
+    BUFFET • BANQUET • FINE DINING
+</p>
+
+        <h1>Richi E Rich</h1>
+        <div class="hero-line"></div>
+
+        <p>
+            South Indian • Chinese • Continental — crafted with rich flavours,
+            served in a setting that feels truly royal.
+        </p>
+       <div class="hero-buttons">
+      
+      <a href="https://wa.me/918090039297?text=Hello%20Richi%20E%20Rich!%20%F0%9F%8D%BD%EF%B8%8F%0A%0AI%20would%20like%20to%20place%20an%20order.%0APlease%20share%20the%20menu%20and%20details." target="_blank" class="btn-order">🍴 Order Now</a>
+      <a href="tel:+918090039297" class="btn-call">📞 +91 8090039297</a>
+    </div>
+
+
+    <div class="hero-explore">
+      <p>EXPLORE MENUS</p>
+      <div class="hero-arrow">&#8964;</div>
+    </div>
+  </div>
+</section>
+
+<section class="cooking-section">
+    <div class="section-title">
+        <span>BEHIND THE SCENES</span>
+        <h2>The Art of Cooking</h2>
+    </div>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="images/cooking.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menus – Choose Your Celebration</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      padding: 70px 24px 90px;
+    }
+
+    /* ── Section Header ───────────────────────────────────── */
+    .section-eyebrow {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: #C8A84B;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: #C8A84B;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .section-divider {
+      width: 56px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #C8A84B, transparent);
+      margin: 0 auto 20px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 64px;
+    }
+
+    /* ── Cards Grid ───────────────────────────────────────── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 580px) {
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Menu Card ────────────────────────────────────────── */
+    .menu-card {
+      background: #111;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(200, 168, 75, 0.18);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+      cursor: pointer;
+    }
+
+    .menu-card:hover {
+      border-color: rgba(200, 168, 75, 0.55);
+      box-shadow: 0 8px 40px rgba(200, 168, 75, 0.12);
+      transform: translateY(-4px);
+    }
+
+    /* ── Card Image ───────────────────────────────────────── */
+    .card-image {
+      position: relative;
+      height: 210px;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .menu-card:hover .card-image img {
+      transform: scale(1.04);
+    }
+
+    /* Gradient overlay so text is readable */
+    .card-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 60px;
+      background: linear-gradient(to top, #111 0%, transparent 100%);
+    }
+
+    .price-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(10, 10, 10, 0.78);
+      color: #C8A84B;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 5px 13px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(200, 168, 75, 0.25);
+      z-index: 1;
+    }
+
+    .crown-svg {
+      width: 13px;
+      height: 13px;
+      fill: #C8A84B;
+    }
+
+    /* ── Card Body ────────────────────────────────────────── */
+    .card-body {
+      padding: 22px 22px 26px;
+    }
+
+    .menu-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.42rem;
+      color: #C8A84B;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .category-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #C8A84B;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 13px;
+    }
+
+    .menu-description {
+      font-size: 0.84rem;
+      color: #bbb;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    /* ── Price Option Buttons (Kitty Party) ───────────────── */
+    .price-options {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .price-btn {
+      flex: 1;
+      border: 1.5px solid rgba(200, 168, 75, 0.6);
+      background: transparent;
+      color: #fff;
+      padding: 11px 8px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .price-btn:hover {
+      background: rgba(200, 168, 75, 0.12);
+      border-color: #C8A84B;
+    }
+
+    .price-btn .amount {
+      display: block;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #C8A84B;
+    }
+
+    .price-btn .label {
+      display: block;
+      font-size: 0.7rem;
+      color: #999;
+      margin-top: 3px;
+      font-weight: 400;
+    }
+
+    /* ── View Menu Card CTA ───────────────────────────────── */
+    .view-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      padding: 14px 20px;
+      background: #C8A84B;
+      color: #000;
+      border: none;
+      border-radius: 11px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.01em;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .view-btn:hover {
+      background: #D9BA62;
+      transform: translateY(-1px);
+    }
+
+    .view-btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="section-eyebrow">Our Menus</p>
+  <h2 class="section-title">Choose Your Celebration</h2>
+  <div class="section-divider"></div>
+  <p class="section-subtitle">Tap any menu to view the full card. Per plate, taxes as applicable.</p>
+
+  <div class="cards-grid">
+
+    <!-- ── Kitty Party Menu ─────────────────────────────── -->
+    <div class="menu-card">
+      <div class="card-image">
+        <!--  Replace src with your own image path  -->
+        <img
+          src="../images/kitty.jpg"
+          alt="Kitty Party Menu"
+        />
+        <div class="price-badge">
+          <svg class="crown-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h20v2H2v-2zM2 7l5 5 5-7 5 7 5-5v10H2V7z"/>
+          </svg>
+          ₹300 / plate
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="menu-name">Kitty Party Menu</h3>
+        <p class="category-label">Appetizers (Any Two)</p>
+        <p class="menu-description">
+          Exclusive hall for kitty &amp; private gatherings.
+          Beverages (Any One) · Appetizers (Any Two) · Main Course (Any One) · Desserts (Any One).
+        </p>
+        <div class="price-options">
+          <button class="price-btn">
+            <span class="amount">₹300</span>
+            <span class="label">Standard Menu</span>
+          </button>
+          <button class="price-btn">
+            <span class="amount">₹350</span>
+            <span class="label">Premium Menu</span>
+          </button>
+        </div>
+        <button class="view-btn" onclick="window.open('images/kitty-party-menu.pdf.jpeg', '_blank')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          View Menu Card
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Silver Menu ──────────────────────────────────── -->
+    <div class="menu-card">
+      <div class="card-image">
+        <!--  Replace src with your own image path  -->
+        <img
+          src="../images/silver.jpg"
+          alt="Silver Menu"
+        />
+        <div class="price-badge">
+          <svg class="crown-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h20v2H2v-2zM2 7l5 5 5-7 5 7 5-5v10H2V7z"/>
+          </svg>
+          ₹500 / plate
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="menu-name">Silver Menu</h3>
+        <p class="category-label">Appetizers (Any Two)</p>
+        <p class="menu-description">
+          Welcome Drinks (Any Two) · Salads (Any Two) · Raita (Any One) · Main Course Paneer /
+          Veg Curry / Dry Veg · Dal · Rice · Indian Breads · Dessert — a complete, lavish
+          spread for your guests.
+        </p>
+        <button class="view-btn" onclick="window.open('images/silver-menu.pdf.jpeg', '_blank')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          View Menu Card
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Gold Menu ────────────────────────────────────── -->
+    <div class="menu-card">
+      <div class="card-image">
+        <!--  Replace src with your own image path  -->
+        <img
+          src="../images/gold.jpg"
+          alt="Gold Menu"
+        />
+        <div class="price-badge">
+          <svg class="crown-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h20v2H2v-2zM2 7l5 5 5-7 5 7 5-5v10H2V7z"/>
+          </svg>
+          ₹600 / plate
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="menu-name">Gold Menu</h3>
+        <p class="category-label">Appetizers (Any Three)</p>
+        <p class="menu-description">
+          Welcome Drinks (Any Two) · Salads (Any Two) · Raita (Any One) · Main Course Paneer /
+          Veg Curry / Dry Veg · Dal · Rice · Indian Breads · Dessert — a complete, lavish
+          spread for your guests.
+        </p>
+        <button class="view-btn" onclick="window.open('images/gold-menu.pdf.jpeg', '_blank')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          View Menu Card
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+    <p>Experience the passion behind every dish</p>
+</section>
+
+    <!-- GALLERY SECTION -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-header">
+    <p class="gallery-tag">📷 GALLERY</p>
+    <h2>A Glimpse Inside</h2>
+    <div class="gallery-line"></div>
+    <p class="gallery-sub">Explore our interior, signature dishes and the royal ambiance that makes every visit memorable.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/image1.jpg.jpeg" alt="Signature Dishes"/>
+      <span>Signature Dishes</span>
+    </div>
+    <div class="gallery-item">
+      <img src="images/hero.jpg" alt="Royal Interior"/>
+      <span>Royal Interior</span>
+    </div>
+    <div class="gallery-item">
+      <img src="images/image2.jpg.jpeg" alt="Crafted with Care"/>
+      <span>Crafted with Care</span>
+    </div>
+    <div class="gallery-item">
+      <img src="images/kitty.jpg" alt="Warm Ambiance"/>
+      <span>Warm Ambiance</span>
+    </div>
+    <div class="gallery-item">
+      <img src="images/silver.jpg" alt="Flavours of Richi E Rich"/>
+      <span>Flavours of Richi E Rich</span>
+    </div>
+    <div class="gallery-item">
+      <img src="images/gold.jpg" alt="Fine Dining Moments"/>
+      <span>Fine Dining Moments</span>
+    </div>
+  </div>
+</section>
+
+<!-- BANQUET SECTION -->
+<section class="banquet-section" id="banquet">
+  <div class="banquet-header">
+    <p class="banquet-tag">🎉 BANQUET</p>
+    <h2>Banquet Booking Inquiry</h2>
+    <div class="banquet-line"></div>
+    <p class="banquet-sub">Planning a celebration? Send us an inquiry and our team will get back to you on WhatsApp with availability and packages.</p>
+  </div>
+
+  <div class="banquet-form-box">
+    <div class="form-row">
+      <div class="form-group">
+        <label>FULL NAME *</label>
+        <input type="text" placeholder="Your name" id="fullname"/>
+      </div>
+      <div class="form-group">
+        <label>PHONE NUMBER *</label>
+        <input type="tel" placeholder="10-digit mobile" id="phone"/>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>EVENT TYPE</label>
+        <select id="eventtype">
+          <option>Birthday</option>
+          <option>Wedding</option>
+          <option>Anniversary</option>
+          <option>Corporate Event</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>NUMBER OF GUESTS *</label>
+        <input type="number" placeholder="e.g. 80" id="guests"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+  <label>PREFERRED DATE *</label>
+  <input type="date" id="date" min=""/>
+</div>
+
+<div class="form-group">
+  <label>PREFERRED TIME *</label>
+  <select id="time">
+    <option value="">Select a time</option>
+    <optgroup label="🌅 Morning (AM)">
+      <option>9:00 AM</option>
+      <option>9:30 AM</option>
+      <option>10:00 AM</option>
+      <option>10:30 AM</option>
+      <option>11:00 AM</option>
+      <option>11:30 AM</option>
+    </optgroup>
+    <optgroup label="☀️ Afternoon (PM)">
+      <option>12:00 PM</option>
+      <option>12:30 PM</option>
+      <option>1:00 PM</option>
+      <option>1:30 PM</option>
+      <option>2:00 PM</option>
+      <option>2:30 PM</option>
+      <option>3:00 PM</option>
+      <option>3:30 PM</option>
+      <option>4:00 PM</option>
+      <option>4:30 PM</option>
+    </optgroup>
+    <optgroup label="🌆 Evening (PM)">
+      <option>5:00 PM</option>
+      <option>5:30 PM</option>
+      <option>6:00 PM</option>
+      <option>6:30 PM</option>
+      <option>7:00 PM</option>
+      <option>7:30 PM</option>
+      <option>8:00 PM</option>
+      <option>8:30 PM</option>
+    </optgroup>
+    <optgroup label="🌙 Night (PM)">
+      <option>9:00 PM</option>
+      <option>9:30 PM</option>
+      <option>10:00 PM</option>
+      <option>10:30 PM</option>
+      <option>11:00 PM</option>
+    </optgroup>
+  </select>
+</div>
+
+    <div class="form-group full-width">
+      <label>SPECIAL REQUESTS</label>
+      <textarea placeholder="Any preferences for your event" id="special"></textarea>
+    </div>
+
+    
+<button id="banquet-whatsapp-btn" type="button" style="
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin: 30px auto 40px;
+  background: linear-gradient(90deg, #B8860B, #FFD700, #B8860B);
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+">
+  ➤ Send Inquiry on WhatsApp
+</button>
+
+
+
+
+</section> <!-- banquet section end -->
+
+<!-- DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- BOOK A TABLE SECTION -->
+<section class="booking-section" id="book-table">
+  <div class="booking-header">
+    <p class="booking-tag">📅 RESERVATIONS</p>
+    <h2>Book a Table</h2>
+    <div class="booking-line"></div>
+    <p class="booking-sub">Reserve your spot in seconds — your details go straight to our team on WhatsApp.</p>
+  </div>
+
+  <div class="booking-form-box">
+    <div class="form-row">
+      <div class="form-group">
+        <label>FULL NAME *</label>
+        <input type="text" id="book-name" placeholder="Your name"/>
+      </div>
+      <div class="form-group">
+        <label>PHONE NUMBER *</label>
+        <input type="tel" id="book-phone" placeholder="10-digit mobile"/>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>GUESTS</label>
+        <select id="book-guests">
+          <option>1 Guest</option>
+          <option selected>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6 Guests</option>
+          <option>7 Guests</option>
+          <option>8 Guests</option>
+          <option>9 Guests</option>
+          <option>10+ Guests</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>DATE *</label>
+        <input type="date" id="book-date"/>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label>TIME *</label>
+      <select id="book-time">
+        <option value="">Select a time</option>
+        <optgroup label="🌅 Morning (AM)">
+          <option>9:00 AM</option>
+          <option>9:30 AM</option>
+          <option>10:00 AM</option>
+          <option>10:30 AM</option>
+          <option>11:00 AM</option>
+          <option>11:30 AM</option>
+        </optgroup>
+        <optgroup label="☀️ Afternoon (PM)">
+          <option>12:00 PM</option>
+          <option>12:30 PM</option>
+          <option>1:00 PM</option>
+          <option>1:30 PM</option>
+          <option>2:00 PM</option>
+          <option>2:30 PM</option>
+          <option>3:00 PM</option>
+          <option>3:30 PM</option>
+          <option>4:00 PM</option>
+          <option>4:30 PM</option>
+        </optgroup>
+        <optgroup label="🌆 Evening (PM)">
+          <option>5:00 PM</option>
+          <option>5:30 PM</option>
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+          <option>8:00 PM</option>
+          <option>8:30 PM</option>
+        </optgroup>
+        <optgroup label="🌙 Night (PM)">
+          <option>9:00 PM</option>
+          <option>9:30 PM</option>
+          <option>10:00 PM</option>
+          <option>10:30 PM</option>
+          <option>11:00 PM</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="form-group full-width">
+      <label>SPECIAL REQUESTS</label>
+      <textarea id="book-special" placeholder="High chair, window seat, etc."></textarea>
+    </div>
+
+<button id="book-whatsapp-btn" type="button" style="
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin: 24px auto 0;
+  background: linear-gradient(90deg, #B8860B, #FFD700, #B8860B);
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+">
+  ✈ Book on WhatsApp
+</button>
+  </div>
+</section>
+
+<!-- CONTACT / FIND US SECTION -->
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <p class="contact-tag">VISIT US</p>
+    <h2>Find Richi E Rich</h2>
+    <div class="contact-line"></div>
+  </div>
+
+  <div class="contact-content">
+    <!-- Left Side -->
+    <div class="contact-left">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h4>Address</h4>
+          <p>Richi E Rich Restaurant, Rajajipuram, Lucknow, Uttar Pradesh</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <div>
+          <h4>Call / WhatsApp</h4>
+          <p>+91 8090039297</p>
+        </div>
+      </div>
+
+      <a href="https://share.google/jIXEEBquTMm22upeA" target="_blank" class="directions-btn">
+        ✈ Get Directions
+      </a>
+    </div>
+
+    <!-- Right Side - Map -->
+   <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.7623!2d80.89089!3d26.84567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3b271915555%3A0x6e2b6b2b2b2b2b2b!2sRichi%20E%20Rich!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</section> <!-- last section ends here -->
+
+    <footer class="footer">
+      <h3>Richi E Rich</h3>
+      <p>Buffet · Banquet · Fine Dining · Rajajipuram, Lucknow</p>
+      <p>© 2026 Richi E Rich. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
